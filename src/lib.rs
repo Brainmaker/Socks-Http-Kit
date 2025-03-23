@@ -4,7 +4,7 @@
 //! This library serves as a foundation layer for higher-level proxy protocols.
 //! It provides a set of Tokio-based asynchronous functions specifically for
 //! parsing and processing SOCKS5 and HTTP proxy protocol requests and responses.
-//! The library employs an I/O-agnostic design, meaning it doesn't spawn internal
+//! The library employs I/O-agnostic design, meaning it doesn't spawn internal
 //! threads, establish network connections, or perform DNS resolution.
 //! Instead, it delegates these controls entirely to the user code,
 //! enabling flexible integration with various proxy applications.
@@ -267,7 +267,7 @@ impl Address {
 }
 
 impl From<Address> for String {
-    /// Converts an `Address` into a HTTP-style text representation.
+    /// Converts an `Address` into an HTTP-style text representation.
     ///
     /// This implementation formats the address in HTTP-style notation:
     /// - IPv4: "`192.168.1.1:8080`"
@@ -281,7 +281,7 @@ impl From<Address> for String {
 }
 
 impl From<&Address> for String {
-    /// Converts an `&Address` into a HTTP-style text representation.
+    /// Converts an `&Address` into an HTTP-style text representation.
     fn from(address: &Address) -> Self {
         match address {
             Address::IPv4((ip, port)) => format!("{}:{}", ip, port),
@@ -295,7 +295,7 @@ impl From<&Address> for String {
 impl TryFrom<String> for Address {
     type Error = AddrError;
 
-    /// Attempts to parse a HTTP-style text address into an `Address`.
+    /// Attempts to parse an HTTP-style text address into an `Address`.
     fn try_from(value: String) -> result::Result<Self, Self::Error> {
         Address::try_from(value.as_str())
     }
@@ -304,7 +304,7 @@ impl TryFrom<String> for Address {
 impl TryFrom<&str> for Address {
     type Error = AddrError;
 
-    /// Attempts to parse a HTTP-style text address into an `Address`.
+    /// Attempts to parse an HTTP-style text address into an `Address`.
     fn try_from(string: &str) -> result::Result<Self, Self::Error> {
         if string.starts_with('[') {
             // IPv6 format: [IPv6]:port
