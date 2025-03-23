@@ -1,11 +1,11 @@
 # Socks-Http-Kit
 
-[![Build Status](https://github.com/Brainmaker/Obfswire/actions/workflows/ci.yml/badge.svg)](https://github.com/Brainmaker/Obfswire/actions/workflows/ci.yml)
-![docs.rs](https://img.shields.io/docsrs/obfswire)
-[![codecov](https://codecov.io/github/Brainmaker/Obfswire/graph/badge.svg?token=WVLFE0TA33)](https://codecov.io/github/Brainmaker/Obfswire)
+[![Build Status](https://github.com/Brainmaker/Socks-Http-Kit/actions/workflows/ci.yml/badge.svg)](https://github.com/Brainmaker/Socks-Http-Kit/actions/workflows/ci.yml)
+![docs.rs](https://img.shields.io/docsrs/socks-http-kit)
+[![codecov](https://codecov.io/github/Brainmaker/Socks-Http-Kit/graph/badge.svg?token=J0G7UXPAER)](https://codecov.io/github/Brainmaker/Socks-Http-Kit)
 ![License: MIT or Apache 2.0](https://img.shields.io/badge/license-MIT%20or%20Apache%202.0-blue)
 
-[API Documentation](https://docs.rs/obfswire/latest/obfswire/)
+[API Documentation](https://docs.rs/socks-http-kit/latest/socks-http-kit/)
 
 A lightweight library for SOCKS5 and HTTP proxy protocol encoding and parsing,
 designed to facilitate complex proxy applications.
