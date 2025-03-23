@@ -1,0 +1,40 @@
+[package]
+name = "socks-http-kit"
+version = "0.1.0"
+edition = "2024"
+authors = ["Brainmaker"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Brainmaker/Socks-Http-Kit"
+documentation = "https://docs.rs/socks-http-kit/"
+description = """
+A lightweight library for SOCKS5 and HTTP proxy protocol encoding and parsing,
+designed to facilitate complex proxy applications.
+"""
+keywords = ["network", "networking", "http", "socks", "proxy"]
+categories = ["network-programming"]
+readme = "README.md"
+
+[dependencies]
+tokio = { version = "1", features = ["io-util"] }
+
+# Http feature dependencies
+base64 = { version = "0.22", optional = true }
+futures-util = { version = "0.3", default-features = false, optional = true }
+httparse = { version = "1", optional = true }
+tokio-util = { version = "0.7", features = ["codec"], optional = true }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["net", "macros", "rt", "time"] }
+
+[features]
+http = [
+    "dep:base64",
+    "dep:futures-util",
+    "dep:httparse",
+    "dep:tokio-util",
+]
+socks5 = []
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]

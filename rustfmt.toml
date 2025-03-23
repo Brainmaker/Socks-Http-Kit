@@ -1,0 +1,6 @@
+edition = "2024"
+
+# import settings
+group_imports = "StdExternalCrate"
+imports_granularity = "Crate"
+imports_layout = "HorizontalVertical"
