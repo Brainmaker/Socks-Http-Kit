@@ -1,7 +1,7 @@
 # Socks-Http-Kit
 
 [![CI](https://github.com/Brainmaker/Socks-Http-Kit/actions/workflows/ci.yml/badge.svg)](https://github.com/Brainmaker/Socks-Http-Kit/actions/workflows/ci.yml)
-![docs.rs](https://img.shields.io/docsrs/socks-http-kit)
+[![docs.rs](https://img.shields.io/docsrs/socks-http-kit)](https://docs.rs/socks-http-kit/latest/socks_http_kit/)
 [![codecov](https://codecov.io/github/Brainmaker/Socks-Http-Kit/graph/badge.svg?token=J0G7UXPAER)](https://codecov.io/github/Brainmaker/Socks-Http-Kit)
 ![License: MIT or Apache 2.0](https://img.shields.io/badge/license-MIT%20or%20Apache%202.0-blue)
 
