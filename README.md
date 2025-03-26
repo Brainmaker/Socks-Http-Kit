@@ -21,7 +21,7 @@ enabling flexible integration with various proxy applications.
 Socks-Http-Kit supports:
 
 - SOCKS5 client and server implementations.
-    - Support for CONNECT, BIND, and UDP_ASSOCIATE commands.
+    - Support for `CONNECT`, `BIND`, and `UDP_ASSOCIATE` commands.
     - Username/password authentication mechanism.
 
 - HTTP proxy client and server implementations.

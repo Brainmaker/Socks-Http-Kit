@@ -12,7 +12,7 @@
 //! Socks-Http-Kit supports:
 //!
 //! - SOCKS5 client and server implementations
-//!     - Full support for CONNECT, BIND, and UDP_ASSOCIATE commands.
+//!     - Full support for `CONNECT`, `BIND`, and `UDP_ASSOCIATE` commands.
 //!     - Username/password authentication mechanism.
 //!
 //! - HTTP proxy client and server implementations.
